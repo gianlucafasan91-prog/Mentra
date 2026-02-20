@@ -1,4 +1,4 @@
-import { ArrowRight, Users, Calendar } from 'lucide-react';
+import { ArrowRight, Users, Calendar, Activity, Moon, RefreshCcw, Sparkles } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -57,6 +57,29 @@ export default function Hero() {
             <div>
               <div className="text-3xl font-bold text-cyan-400 mb-1">Raggiungi</div>
               <div className="text-slate-400">il tuo picco</div>
+            </div>
+          </div>
+
+          <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+              <Activity className="w-5 h-5 text-emerald-400" />
+              <span className="text-slate-300">Monitoraggio dati biometrici</span>
+            </div>
+            <div className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+              <Sparkles className="w-5 h-5 text-cyan-400" />
+              <span className="text-slate-300">Consigli sugli allenamenti caricati</span>
+            </div>
+            <div className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+              <Moon className="w-5 h-5 text-emerald-400" />
+              <span className="text-slate-300">Monitoraggio sonno</span>
+            </div>
+            <div className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+              <RefreshCcw className="w-5 h-5 text-cyan-400" />
+              <span className="text-slate-300">Recovery intelligente</span>
+            </div>
+            <div className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 sm:col-span-2 lg:col-span-1">
+              <Users className="w-5 h-5 text-emerald-400" />
+              <span className="text-slate-300">Dati visibili a psicologo e personal trainer</span>
             </div>
           </div>
         </div>
